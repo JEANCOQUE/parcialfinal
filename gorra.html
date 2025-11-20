@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gorras - Tienda Oficial de Junior FC</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+    <div class="header-content">
+        <img src="escudojunior.png" alt="Logo Junior FC" class="logo">
+        <h1>Junior FC</h1>
+    </div>
+
+    <!-- 🔴 CARRITO -->
+    <div class="carrito-container">
+        <img src="carrito.png" class="icono-carrito" alt="Carrito">
+        <span class="contador-carrito">0</span>
+
+        <div class="carrito-lista">
+            <h3>Carrito de compras</h3>
+            <div class="carrito-items"></div>
+            <p id="total-carrito">Total: $0 COP</p>
+            <button id="vaciar-carrito" class="btn-vaciar">
+                <img src="basura.png" alt="Vaciar" class="icono-basura">
+            </button>
+        </div>
+    </div>
+    <!-- 🔴 FIN CARRITO -->
+</header>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="camisas.html">Camisas</a>
+    <a href="pantalonetas.html">Pantalonetas</a>
+    <a href="accesorios.html">Accesorios</a>
+    <a href="buzos.html">Buzos</a>
+    <a href="gorra.html">Gorra</a>
+    <a href="balones.html">Balones</a>
+</nav>
+
+<h2>Gorras Oficiales</h2>
+
+<div class="productos">
+
+    <div class="producto">
+        <img src="Gorra Junior Blanca.webp" alt="Gorra Junior Blanca">
+        <h3>Gorra Junior FC Blanca</h3>
+        <p>$80.000 COP</p>
+        <button class="btn-agregar"
+                data-id="gor1"
+                data-nombre="Gorra Junior Blanca"
+                data-precio="80000">Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+        <img src="Gorra Junior Azul.webp" alt="Gorra Junior Azul">
+        <h3>Gorra Junior FC Azul</h3>
+        <p>$80.000 COP</p>
+        <button class="btn-agregar"
+                data-id="gor2"
+                data-nombre="Gorra Junior Azul"
+                data-precio="80000">Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+        <img src="Gorra Junior Negra.webp" alt="Gorra Junior Negra">
+        <h3>Gorra Junior FC Negra</h3>
+        <p>$80.000 COP</p>
+        <button class="btn-agregar"
+                data-id="gor3"
+                data-nombre="Gorra Junior Negra"
+                data-precio="80000">Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+        <img src="Gorra Junior Roja.webp" alt="Gorra Junior Roja">
+        <h3>Gorra Junior FC Roja</h3>
+        <p>$80.000 COP</p>
+        <button class="btn-agregar"
+                data-id="gor4"
+                data-nombre="Gorra Junior Roja"
+                data-precio="80000">Agregar al carrito</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

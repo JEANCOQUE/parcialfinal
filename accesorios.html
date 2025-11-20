@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Accesorios - Tienda Oficial de Junior FC</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+    <div class="header-content">
+        <img src="escudojunior.png" alt="Logo Junior FC" class="logo">
+        <h1>Junior FC</h1>
+    </div>
+
+    <!-- 🔴 CARRITO (AGREGADO) -->
+    <div class="carrito-container">
+        <img src="carrito.png" class="icono-carrito" alt="Carrito">
+        <span class="contador-carrito">0</span>
+
+        <div class="carrito-lista">
+            <h3>Carrito</h3>
+            <div class="carrito-items"></div>
+            <p class="carrito-total">Total: $0</p>
+            <button id="vaciar-carrito" class="btn-vaciar">
+                <img src="basura.png" alt="Vaciar">
+            </button>
+        </div>
+    </div>
+    <!-- 🔴 FIN CARRITO -->
+</header>
+
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="camisas.html">Camisas</a>
+    <a href="pantalonetas.html">Pantalonetas</a>
+    <a href="accesorios.html">Accesorios</a>
+    <a href="buzos.html">Buzos</a>
+    <a href="gorra.html">Gorra</a>
+    <a href="balones.html">Balones</a>
+    <a href="contactanos.html">Contactanos</a>
+</nav>
+
+<h2>Accesorios Oficiales</h2>
+
+<div class="productos">
+
+    <div class="producto">
+        <img src="Bolso Adidas Junior Azul.webp" alt="Bolso Adidas Junior Azul">
+        <h3>Bolso Adidas Junior FC Azul</h3>
+        <p>$110.000 COP</p>
+        <button class="btn-agregar"
+            data-id="acc1"
+            data-nombre="Bolso Adidas Junior Azul"
+            data-precio="110000">Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+        <img src="Banderín Junior.webp" alt="Banderín Junior">
+        <h3>Banderín Junior FC</h3>
+        <p>$24.000 COP</p>
+        <button class="btn-agregar"
+            data-id="acc2"
+            data-nombre="Banderín Junior"
+            data-precio="24000">Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+        <img src="Paraguas Estampado Junior.webp" alt="Paraguas Estampado Junior">
+        <h3>Paraguas Estampado Junior FC</h3>
+        <p>$50.000 COP</p>
+        <button class="btn-agregar"
+            data-id="acc3"
+            data-nombre="Paraguas Estampado Junior"
+            data-precio="50000">Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+        <img src="Termo Junior.webp" alt="Termo Junior">
+        <h3>Termo Junior FC</h3>
+        <p>$20.000 COP</p>
+        <button class="btn-agregar"
+            data-id="acc4"
+            data-nombre="Termo Junior"
+            data-precio="20000">Agregar al carrito</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

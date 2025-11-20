@@ -1,0 +1,489 @@
+/* ------------------------------
+   ESTILO GENERAL
+--------------------------------*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: #ffffff;
+    color: #0e1357;
+}
+
+/* ------------------------------
+   BARRA SUPERIOR CON LOGO Y TÍTULO
+--------------------------------*/
+.topbar {
+    background: #ffffff;
+    border-bottom: 4px solid #c40000;
+    padding: 10px 0;
+}
+
+.header-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 70px;
+    height: auto;
+}
+
+.header-content h1 {
+    margin: 0;
+    font-size: 32px;
+    color: #0e1357;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* ------------------------------
+   NAV BAR
+--------------------------------*/
+nav {
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 15px 0;
+    border-bottom: 3px solid #c40000;
+}
+
+nav a {
+    text-decoration: none;
+    color: #0e1357;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px 10px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #c40000;
+}
+
+/* ------------------------------
+   ZONA MEDIA
+--------------------------------*/
+.zona-media {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 15px 20px;
+}
+
+/* VIDEO IZQUIERDA */
+.video-lado {
+    width: 40%;
+    max-width: 380px;
+    height: 470px;
+    object-fit: cover;
+    border-radius: 10px;
+    background: #000;
+}
+
+/* IMAGEN CENTRO */
+.img-centro {
+    width: 100%;
+    max-width: 1200px;
+    height: 470px;
+    object-fit: contain;
+    background: #000;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* CARRUSEL */
+.carousel {
+    width: 40%;
+    max-width: 380px;
+    height: 470px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+}
+
+.carousel-track img {
+    width: 100%;
+    height: 470px;
+    object-fit: cover;
+}
+
+/* Botones */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.75);
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 50%;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* ------------------------------
+   SUBTÍTULOS
+--------------------------------*/
+h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-top: 40px;
+    color: #c40000;
+    letter-spacing: 1px;
+}
+
+/* ------------------------------
+   GRID PRODUCTOS
+--------------------------------*/
+.productos {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+/* ------------------------------
+   TARJETA DE PRODUCTO
+--------------------------------*/
+.producto {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #e6e6e6;
+    border-top: 5px solid #c40000;
+    transition: 0.3s ease-in-out;
+}
+
+.producto:hover {
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    transform: translateY(-5px);
+}
+
+.producto img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 10px;
+    background: #ddd;
+}
+
+.producto h3 {
+    font-size: 18px;
+    margin: 12px 0 8px 0;
+    color: #0e1357;
+}
+
+.producto p {
+    font-size: 20px;
+    color: #c40000;
+    font-weight: bold;
+}
+
+/* ------------------------------------------------
+   📱 RESPONSIVE NUEVO — TABLETS (mediano)
+--------------------------------------------------*/
+@media (max-width: 900px) {
+    .zona-media {
+        flex-direction: column;
+    }
+
+    .video-lado,
+    .carousel {
+        width: 90%;
+        height: 280px;
+        max-width: none;
+    }
+
+    .carousel-track img,
+    .video-lado {
+        height: 280px;
+    }
+
+    .img-centro {
+        height: auto;
+    }
+
+    nav a {
+        font-size: 15px;
+    }
+}
+
+/* ------------------------------------------------
+   📱 RESPONSIVE EXISTENTE — CELULARES (pequeño)
+--------------------------------------------------*/
+@media (max-width: 600px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        width: 60px;
+    }
+
+    .header-content h1 {
+        font-size: 24px;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+    }
+
+    .zona-media {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .carousel,
+    .video-lado {
+        width: 90%;
+        height: 180px;
+    }
+
+    .carousel-track img {
+        height: 180px;
+    }
+
+    .img-centro {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* ------------------------------------------------
+    CARRITO + LISTA DESPLEGABLE
+--------------------------------------------------*/
+
+.carrito-container {
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.icono-carrito {
+    width: 45px;
+}
+
+.contador-carrito {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    background: #c40000;
+    color: white;
+    padding: 3px 7px;
+    font-size: 14px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+/* CUADRO DEL CARRITO */
+.carrito-lista {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 300px;
+    max-height: 350px;
+    background: #ffffff;
+    border: 2px solid #c40000;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    display: none;
+    z-index: 1100;
+    animation: fadeIn 0.25s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.carrito-lista h3 {
+    text-align: center;
+    margin: 0 0 10px;
+    color: #0e1357;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.carrito-items {
+    max-height: 230px;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+.carrito-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+
+/* Botón eliminar */
+.btn-eliminar {
+    background: #c40000;
+    color: white;
+    padding: 3px 7px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.btn-eliminar:hover {
+    background: #900000;
+}
+
+.carrito-total {
+    text-align: center;
+    margin-top: 12px;
+    font-weight: bold;
+    color: #c40000;
+    font-size: 18px;
+}
+
+.btn-agregar {
+    background: #c40000;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+
+.btn-agregar:hover {
+    transform: scale(1.05);
+}
+
+/* BOTÓN VACIAR */
+.btn-vaciar {
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    margin: 10px auto 0;
+    cursor: pointer;
+}
+
+.btn-vaciar img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+    cursor: pointer;
+}
+        /* ------------------------------
+           ESTILO DEL FORMULARIO
+        --------------------------------*/
+        .contacto-container {
+            width: 90%;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 25px;
+            background: #ffffff;
+            border-radius: 12px;
+            border: 2px solid #e6e6e6;
+            border-top: 5px solid #c40000;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .contacto-container h2 {
+            color: #c40000;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .contacto-container label {
+            font-weight: bold;
+            color: #0e1357;
+        }
+
+        .contacto-container input,
+        .contacto-container textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 8px;
+            margin-bottom: 15px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        .contacto-container textarea {
+            resize: vertical;
+            height: 150px;
+        }
+
+        .btn-enviar {
+            width: 100%;
+            background: #c40000;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn-enviar:hover {
+            background: #900000;
+            transform: translateY(-3px);
+        }
+
+        /* REDES SOCIALES */
+        .redes {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .redes h3 {
+            color: #0e1357;
+            margin-bottom: 15px;
+        }
+
+        .redes a {
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            display: block;
+            margin: 10px 0;
+            color: #c40000;
+            transition: 0.3s;
+        }
+
+        .redes a:hover {
+            color: #0e1357;
+        }

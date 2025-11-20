@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contacto - Junior FC</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<header class="topbar">
+    <div class="header-content">
+        <img src="escudojunior.png" alt="Logo Junior FC" class="logo">
+        <h1>Junior FC</h1>
+    </div>
+</header>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="camisas.html">Camisas</a>
+    <a href="pantalonetas.html">Pantalonetas</a>
+    <a href="accesorios.html">Accesorios</a>
+    <a href="buzos.html">Buzos</a>
+    <a href="gorra.html">Gorra</a>
+    <a href="balones.html">Balones</a>
+    <a href="contactos.html">Contactanos</a>
+</nav>
+
+<div class="contacto-container">
+
+    <h2>Contáctanos</h2>
+
+    <form id="formContacto">
+        <label for="nombre">Tu nombre:</label>
+        <input type="text" id="nombre" placeholder="Escribe tu nombre" required>
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" placeholder="example@gmail.com" required>
+
+        <label for="mensaje">Mensaje o queja:</label>
+        <textarea id="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+        <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+    </form>
+
+</div>
+
+<div class="redes">
+    <h3>Visita nuestras páginas</h3>
+
+    <a href="https://www.tiktok.com/@juniorfcsa?_r=1&_t=ZS-91YE8fr3BaO" target="_blank">TikTok</a>
+    <a href="https://www.facebook.com/share/1AKD7j7Vv3/" target="_blank">Facebook</a>
+    <a href="https://www.instagram.com/juniorclubsa?igsh=cDZucWZwMzVpOGI3" target="_blank">Instagram</a>
+</div>
+
+<script>
+    
+    document.getElementById("formContacto").addEventListener("submit", function(e) {
+        e.preventDefault();
+        alert("¡Tu mensaje ha sido enviado correctamente! Pronto nos pondremos en contacto contigo.");
+        this.reset();
+    });
+</script>
+
+</body>
+</html>

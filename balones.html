@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Balones - Tienda Oficial de Junior FC</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+    <div class="header-content">
+        <img src="escudojunior.png" alt="Logo Junior FC" class="logo">
+        <h1>Junior FC</h1>
+    </div>
+
+    <div class="carrito-container">
+        <img src="carrito.png" class="icono-carrito" alt="Carrito">
+        <span class="contador-carrito">0</span>
+
+        <div class="carrito-lista">
+            <h3>Carrito</h3>
+            <div class="carrito-items"></div>
+            <p class="carrito-total">Total: $0</p>
+            <button id="vaciar-carrito" class="btn-vaciar">
+                <img src="basura.png" class="icono-basura" alt="Eliminar todo">
+            </button>
+        </div>
+    </div>
+</header>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="camisas.html">Camisas</a>
+    <a href="pantalonetas.html">Pantalonetas</a>
+    <a href="accesorios.html">Accesorios</a>
+    <a href="buzos.html">Buzos</a>
+    <a href="gorra.html">Gorra</a>
+    <a href="balones.html">Balones</a>
+    <a href="contactanos.html">Contactanos</a>
+</nav>
+
+<h2>Balones Oficiales</h2>
+
+<div class="productos">
+
+    <div class="producto">
+        <img src="Balon Dorado Junior.webp" alt="Balon Dorado Junior">
+        <h3>Balon Dorado Junior FC</h3>
+        <p>$100.000 COP</p>
+        <button class="btn-agregar"
+            data-id="bal1"
+            data-nombre="Balon Dorado Junior"
+            data-precio="100000">Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+        <img src="Balon Junior 2023.webp" alt="Balon Junior 2023">
+        <h3>Balon Junior 2023 FC</h3>
+        <p>$100.000 COP</p>
+        <button class="btn-agregar"
+            data-id="bal2"
+            data-nombre="Balon Junior 2023"
+            data-precio="100000">Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+        <img src="Balon Junior Campeon 2023.webp" alt="Balon Junior Campeon 2023">
+        <h3>Balon Junior FC Campeon 2023</h3>
+        <p>$100.000 COP</p>
+        <button class="btn-agregar"
+            data-id="bal3"
+            data-nombre="Balon Junior Campeon 2023"
+            data-precio="100000">Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+        <img src="Balon Liga 2025.webp" alt="Balon Liga 2025">
+        <h3>Balon Liga 2025</h3>
+        <p>$100.000 COP</p>
+        <button class="btn-agregar"
+            data-id="bal4"
+            data-nombre="Balon Liga 2025"
+            data-precio="100000">Agregar al carrito</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
